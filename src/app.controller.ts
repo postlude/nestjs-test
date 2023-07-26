@@ -3,9 +3,9 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+	constructor(private readonly appService: AppService) { }
 
-	@Get('/')
+	@Get('/health')
 	public health() {
 		console.log('call health');
 		return 'ok';
