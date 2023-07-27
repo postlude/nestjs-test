@@ -10,10 +10,11 @@ async function bootstrap() {
 	// Initialize cls-hooked
 	initializeTransactionalContext();
 
-	const app = await NestFactory.create<NestFastifyApplication>(
-		AppModule,
-		new FastifyAdapter()
-	);
+	// const app = await NestFactory.create<NestFastifyApplication>(
+	// 	AppModule,
+	// 	new FastifyAdapter()
+	// );
+	const app = await NestFactory.create(AppModule);
 
 	await app.listen(3000);
 
