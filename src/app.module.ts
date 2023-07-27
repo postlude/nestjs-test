@@ -6,11 +6,11 @@ import { DatbaseModule } from './database/database.module';
 
 @Module({
 	imports: [
-		ConfigModule.forRoot({
-			envFilePath: ['src/config/local.env'],
-			isGlobal: true
-		}),
-		DatbaseModule,
+		// ConfigModule.forRoot({
+		// 	envFilePath: ['src/config/local.env'],
+		// 	isGlobal: true
+		// }),
+		// DatbaseModule,
 	],
 	controllers: [AppController],
 	providers: [AppService],
