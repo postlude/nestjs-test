@@ -20,6 +20,7 @@
 		"test:e2e": "jest --config ./test/jest-e2e.json"
 	},
 	"dependencies": {
+		"@nestjs/platform-fastify": "^9.4.2",
 		"@nestjs/platform-express": "^8.0.0",
 		"@nestjs/cli": "8.2.6",
 		"@nestjs/common": "9.4.2",
@@ -40,7 +41,6 @@
 		"typeorm-transactional-cls-hooked": "0.1.21"
 	},
 	"devDependencies": {
-		"@nestjs/platform-fastify": "^9.4.2",
 		"@types/bcrypt": "^5.0.0",
 		"@types/node": "20.2.5",
 		"@types/passport-jwt": "^3.0.8",
