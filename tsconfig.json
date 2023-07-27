@@ -1,21 +1,30 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+	// https://www.typescriptlang.org/tsconfig
+	"include": [
+		"src/**/*"
+	],
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2017",
+		"outDir": "./dist",
+		"baseUrl": "./",
+		"experimentalDecorators": true,
+		"removeComments": true,
+		"noImplicitAny": true,
+		"allowUnreachableCode": false,
+		"emitDecoratorMetadata": true, // @Injectable()을 사용해 DI를 사용하기 위해서 필요
+		// "strict": true,
+		//   "declaration": true,
+		//   "allowSyntheticDefaultImports": true,
+		//   "sourceMap": true,
+		//   "incremental": true,
+		//   "skipLibCheck": true,
+		//   "strictBindCallApply": false,
+		//   "forceConsistentCasingInFileNames": false,
+		//   "noFallthroughCasesInSwitch": false
+		// "paths": {
+		// 	"@config/*": ["config/*"],
+		// 	"@database/*": ["database/*"],
+		// }
+	}
 }
